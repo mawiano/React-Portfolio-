@@ -66,6 +66,16 @@ export default function Contact() {
       setSubmitMessage("Thank you!");
   };
 
+    return (
+      <div className="container">
+        <h1>Contact Me</h1>
+        <Form noValidate onSubmit={handleSubmit}>
+          
+        </Form>
+      </div>
+    )
+
+
 
 
 
