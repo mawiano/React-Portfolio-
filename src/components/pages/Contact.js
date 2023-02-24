@@ -129,6 +129,16 @@ export default function Contact() {
             Please enter a message
           </Form.Control.Feedback>
         </Form.Group>
+        <div>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </div>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
       </Form>
     </div>
   );
