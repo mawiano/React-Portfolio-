@@ -40,4 +40,6 @@ const projectList = [
         link: "https://github.com/Sheogorath9/Legacy-Test-Repo",
         id: 5,
     },
-]
+];
+
+export default projectList;  

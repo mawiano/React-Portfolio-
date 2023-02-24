@@ -1,17 +1,27 @@
-import React from 'react';
+import React from "react";
+import avatar from "../../assets/avatar.jpg";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 export default function About() {
   return (
-    <div>
-      <h1>About me</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <Container className="text-center">
+      <Row>
+        <Col>
+          <h1>Mariano Rojano</h1>
+          <img src={avatar} alt="picture" width="300px" />
+        </Col>
+      </Row>
+      <Row className="justify-content-center mt-3">
+        <Card className="shadow-sm" style={{ width: "500px" }}>
+          <Card.Body>
+            <p>
+              I am a recent Web Development bootcamp graduate eager to pursue my
+              first employment. My background is in social media marketing,
+              portrait photography, and automotive photography.
+            </p>
+          </Card.Body>
+        </Card>
+      </Row>
+    </Container>
   );
 }
