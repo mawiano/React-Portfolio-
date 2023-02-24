@@ -49,6 +49,22 @@ export default function Contact() {
     }
   }
 
+  const handleSubmit = (event) => {
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    // Email validation
+    if (!validateEmail(email)) {
+      setErrorMessage("Please enter a valid email.");
+      return;
+    }
+      setUsername("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+      setSubmitMessage("Thank you!");
+  };
 
 
 
