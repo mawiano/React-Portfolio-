@@ -16,11 +16,20 @@ export default function Footer() {
                     <MDBBtn
                     floating
                     className="m-1"
-                    style={{ backgroundColor "#79d1ca" }}
+                    style={{ backgroundColor: "#79d1ca" }}
                     href="mailto:rojanomariano@gmail.com"
                     role="button">
                          <MDBIcon fas icon="envelope" />{" "}
                     </MDBBtn>
+                    <MDBBtn
+            floating
+            className="m-1"
+            style={{ backgroundColor: "#0082ca" }}
+            href="https://www.linkedin.com/in/mariano-rojano-09800714b/"
+            role="button"
+          >
+            <MDBIcon fab icon="linkedin-in" />
+          </MDBBtn>
                 </section>
             </MDBContainer>
         </MDBFooter>
