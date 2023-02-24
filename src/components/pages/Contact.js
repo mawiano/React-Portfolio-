@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
@@ -35,7 +35,7 @@ export default function Contact() {
       setMessage(inputValue);
     } else {
       console.error("No input of this type found!");
-  }
+    }
   };
 
   function handleBlur(event) {
@@ -50,7 +50,6 @@ export default function Contact() {
   }
 
   const handleSubmit = (event) => {
-
     event.preventDefault();
     event.stopPropagation();
 
@@ -59,31 +58,36 @@ export default function Contact() {
       setErrorMessage("Please enter a valid email.");
       return;
     }
-      setUsername("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-      setSubmitMessage("Thank you!");
+    setUsername("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+    setSubmitMessage("Thank you!");
   };
 
-    return (
-      <div className="container">
-        <h1>Contact Me</h1>
-        <Form noValidate onSubmit={handleSubmit}>
-          
-        </Form>
-      </div>
-    )
-
-
-
-
-
-
-
-
-
-
-
-
-};
+  return (
+    <div className="container">
+      <h1>Contact Me</h1>
+      <Form noValidate onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
+          <Form.Label>Your Name</Form.Label>
+          <Form.Control
+            required
+            name="username"
+            type="text"
+            placeholder="Enter Name"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={username}
+          />
+          <Form.Control.Feedback type="invalid">
+            Enter a name
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="contactForm.ControlInput2">
+        
+        </Form.Group>
+      </Form>
+    </div>
+  );
+}
