@@ -99,6 +99,36 @@ export default function Contact() {
             Please enter a valid email address
           </Form.Control.Feedback>
         </Form.Group>
+        <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
+          <Form.label>Subject</Form.label>
+          <Form.Control
+          required
+          name="subject"
+          type="text"
+          placeholder="Enter subject"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={subject}
+        />
+        <Form.Control.Feedback type="invalid">
+          Enter a subject
+        </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="contactFrom.ControlTextarea1">
+          <Form.label>Message</Form.label>
+          <Form.Control 
+             required
+             name="message"
+             as="textarea"
+             rows={3}
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={message}
+           />
+             <Form.Control.Feedback type="invalid">
+            Please enter a message
+          </Form.Control.Feedback>
+        </Form.Group>
       </Form>
     </div>
   );
