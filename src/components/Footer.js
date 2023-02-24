@@ -30,8 +30,26 @@ export default function Footer() {
           >
             <MDBIcon fab icon="linkedin-in" />
           </MDBBtn>
+          <MDBBtn
+            floating
+            className="m-1"
+            style={{ backgroundColor: "#333333" }}
+            href="https://github.com/mawiano"
+            role="button"
+          >
+            <MDBIcon fab icon="github" />
+          </MDBBtn>
                 </section>
             </MDBContainer>
+            <div
+        className="text-center p-3"
+        style={{ backgroundColor: "rgba(0, 0, 255, 0.3)" }}
+      >
+        © 2023 Copyright:
+        <a className="text-white" href="https://mdbootstrap.com/">
+          {" "}Mariano Rojano{" "}
+        </a>
+      </div>
         </MDBFooter>
-    )
+    );
 }
