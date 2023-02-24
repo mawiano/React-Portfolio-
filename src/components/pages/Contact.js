@@ -85,7 +85,19 @@ export default function Contact() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="contactForm.ControlInput2">
-        
+          <Form.label>Email address</Form.label>
+          <Form.Control
+            required
+            name="email"
+            type="email"
+            placeholder="Enter Email"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={email}
+          />
+          <Form.Control.Feedback type="invalid">
+            Please enter a valid email address
+          </Form.Control.Feedback>
         </Form.Group>
       </Form>
     </div>
