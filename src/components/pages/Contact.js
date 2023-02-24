@@ -36,5 +36,28 @@ export default function Contact() {
     } else {
       console.error("No input of this type found!");
   }
+  };
+
+  function handleBlur(event) {
+    if (!event.target.value.length) {
+      setErrorMessage(`${event.target.name} is required`);
+    } else {
+      setErrorMessage("");
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [event.target.value]: event.target.value });
+    }
   }
+
+
+
+
+
+
+
+
+
+
+
+
 };
