@@ -17,7 +17,7 @@ export default function About() {
             <p>
               I am a recent Web Development bootcamp graduate eager to pursue my
               first employment. My background is in social media marketing,
-              portrait photography, and automotive photography. As of a recent I
+              portrait photography, and automotive photography. As of recent I
               am a Full Stack Developer with experience using HTML5, CSS3,
               JavaScript, JQuery, Express.js, Node.js, MongoDB, MySQL, NoSQL,
               GraphQL, and Git.
