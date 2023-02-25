@@ -85,7 +85,7 @@ export default function Contact() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="contactForm.ControlInput2">
-          <Form.label>Email address</Form.label>
+          <Form.Label>Email address</Form.Label>
           <Form.Control
             required
             name="email"
@@ -100,7 +100,7 @@ export default function Contact() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
-          <Form.label>Subject</Form.label>
+          <Form.Label>Subject</Form.Label>
           <Form.Control
           required
           name="subject"
@@ -115,7 +115,7 @@ export default function Contact() {
         </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="contactFrom.ControlTextarea1">
-          <Form.label>Message</Form.label>
+          <Form.Label>Message</Form.Label>
           <Form.Control 
              required
              name="message"
