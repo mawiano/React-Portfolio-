@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio-/static/css/main.c2cab247.css",
+    "main.js": "/React-Portfolio-/static/js/main.729586cf.js",
+    "static/media/chefGpt.PNG": "/React-Portfolio-/static/media/chefGpt.fc3e30c122d70270444f.PNG",
+    "static/media/patron.PNG": "/React-Portfolio-/static/media/patron.3fe8f3cef671d81c23f9.PNG",
+    "static/media/nflApp.PNG": "/React-Portfolio-/static/media/nflApp.d6d4d46cc9c2422ec13b.PNG",
+    "static/media/book.PNG": "/React-Portfolio-/static/media/book.b57f23885754cc5b7c90.PNG",
+    "static/media/password.PNG": "/React-Portfolio-/static/media/password.815363e173c3045acd07.PNG",
+    "static/media/noteTaker.png": "/React-Portfolio-/static/media/noteTaker.73fff385bd9c3754eb58.png",
+    "static/media/avatar.jpg": "/React-Portfolio-/static/media/avatar.3bcbe2b8a11dd12a1015.jpg",
+    "index.html": "/React-Portfolio-/index.html",
+    "main.c2cab247.css.map": "/React-Portfolio-/static/css/main.c2cab247.css.map",
+    "main.729586cf.js.map": "/React-Portfolio-/static/js/main.729586cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.729586cf.js"
+  ]
+}
